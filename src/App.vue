@@ -41,6 +41,8 @@ function updateRating(newRating, movie) {
             <!-- CHALLENGE 3: Color the stars based on the movie rating. For example, if the movie rating is 3, color 3 stars yellow and 2 gray -->
             <!-- CHALLENGE 4: Allow the end user to click on any of the 5 buttons to update the movie rating accordingly -->
             <!-- CHALLENGE 5: Disable the button for the currently selected rating to prevent the user from giving the same rating twice -->
+
+            <!-- using v-bind shorthand : to conditionally render the class and disabled attributes -->
             <button @click="updateRating(star, movie)" v-for="(star, index) in 5" :key="`star-${index}`"
               :class="{ 'movie-item-star-icon-yellow': index < movie.rating, 'movie-item-star-icon-gray': index >= movie.rating }"
               :disabled="index + 1 === movie.rating">
