@@ -59,6 +59,10 @@
     @apply text-xs mr-2 leading-7;
 }
 
-.movie-item-star-icon {
+.movie-item-star-icon-yellow {
     @apply h-5 w-5 text-yellow-500;
+}
+
+.movie-item-star-icon-gray {
+    @apply h-5 w-5 text-gray-500;
 }
