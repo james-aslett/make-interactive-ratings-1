@@ -59,10 +59,14 @@
     @apply text-xs mr-2 leading-7;
 }
 
-.movie-item-star-icon-yellow {
-    @apply h-5 w-5 text-yellow-500;
+.movie-item-star-icon-wrapper {
+    @apply items-center justify-start flex flex-1 space-x-1;
 }
 
-.movie-item-star-icon-gray {
-    @apply h-5 w-5 text-gray-500;
+.movie-item-star-icon-button {
+    @apply rounded-md disabled:cursor-not-allowed;
+}
+
+.movie-item-star-icon {
+    @apply h-5 w-5;
 }
